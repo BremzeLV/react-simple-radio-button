@@ -41,7 +41,7 @@ class ReactSimpleRadioButton extends React.Component {
         <ul className={'radio_group_container ' + (isLinear ? 'linear' : '')}>
           {
             options.map((item, index)=>{
-              return <li key={index} className={'radio_item ' + (isLinear ? 'linear' : '')}>
+              return <li key={index} className={'radio_item ' + (isLinear ? 'linear' : '') + (item === defaultSelected ? ' selected': '')}>
                 <input type="radio" 
                   defaultChecked={item === defaultSelected} 
                   id={"option_label" + index} 
