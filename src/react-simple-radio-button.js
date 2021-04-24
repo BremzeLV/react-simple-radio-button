@@ -25,7 +25,6 @@ class ReactSimpleRadioButton extends React.Component {
     return optionIndex;
   }
 
-
   render() {
     let self = this
     let props = this.props
